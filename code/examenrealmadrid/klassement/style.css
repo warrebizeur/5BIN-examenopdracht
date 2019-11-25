@@ -1,0 +1,132 @@
+* {
+  text-decoration: none;
+  font-family: "Raleway", Arial, sans-serif;
+}
+
+#gridContainer>* {
+	border: 1px solid #c2c0c0;
+  display: grid;
+}
+
+#gridContainer>nav#menu {
+  display: none;  
+}
+
+#gridContainer>footer {
+  height: auto;
+  padding: 26px 0 24px;
+}
+
+div#menuMobile>nav#collapsableMenu {
+  display: none;
+  background-color: #fff;
+  border: 1px solid #000;
+  position: sticky;
+  
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  
+}
+
+div#menuMobile>nav#collapsableMenu:target {
+  display: block;
+  position: fixed;
+}
+
+footer {
+	grid-area: footer;
+  background-color: #f1f1f1!important;;
+  color: #000!important;
+  text-align: center;
+  padding: 26px 0 24px;
+	}
+
+#logo {
+  height: 100px;
+  margin-left: auto;
+}
+
+
+@media only screen and (min-width: 600px) {
+	#gridContainer {
+		display: grid;
+		grid-template-columns: auto ;
+		grid-template-rows: auto ;
+
+		grid-template-areas: "header  header  header  header  header  header  header  header  header  header"
+												 "menu    menu    menu    menu    menu    menu    menu    menu    menu    menu"
+												 "ploegen spelen  win     gelijk  verlies DV      DT      DS      punten  laatste"
+												 "footer  footer  footer  footer  footer  footer  footer  footer  footer  footer";
+  }
+  
+  #logo {
+    margin-left: 500px;
+  }
+  
+  div#menuMobile {
+   display: none;
+  }
+  #gridContainer>nav#menu {
+		grid-area: menu;
+    display: block;
+    text-align: center;  
+	}
+  
+  #gridContainer>footer {
+		grid-area: footer;
+	}
+  
+  #gridConainer>ploegen {
+    grid-area: ploegen;
+  }
+  
+  #gridConainer>ploegen {
+    grid-area: spelen;
+  }
+  
+  #gridConainer>ploegen {
+    grid-area: win;
+  }
+  
+  #gridConainer>ploegen {
+    grid-area: gelijk;
+  }
+  
+  #gridConainer>ploegen {
+    grid-area: verlies;
+  }
+  
+  #gridConainer>ploegen {
+    grid-area: DV;
+  }
+  
+  #gridConainer>ploegen {
+    grid-area: DT;
+  }
+  
+  #gridConainer>ploegen {
+    grid-area: DS;
+  }
+  
+  #gridConainer>punten {
+    grid-area: punten;
+  }
+  
+  h1 {
+    font-size: 18px;
+  }
+  
+  
+
+
+
+
+
+
+
+
+
+
+

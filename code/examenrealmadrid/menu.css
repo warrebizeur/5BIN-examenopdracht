@@ -1,0 +1,30 @@
+#gridContainer>nav#menu {
+  position: sticky;
+  top: 0;
+}
+
+#gridContainer>nav#menu>ul {
+  list-style-type: none;
+  padding: 8px 16px;
+  margin: 5px;
+  
+  text-align: center;
+}
+
+#gridContainer>nav#menu>ul>li {
+  display: inline-block;
+}
+
+#gridContainer>nav#menu>ul>li>a {
+  background-color: #F1F1F1;
+  display: block;
+  color: #000000;
+  padding: 8px 16px;
+  margin: 8px;
+} 
+
+#gridContainer>nav#menu>ul>li>a:hover {
+  color: #000!important;
+  background-color: #ccc!important;
+}
+

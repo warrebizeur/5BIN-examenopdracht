@@ -1,0 +1,117 @@
+* {
+  text-decoration: none;
+  font-family: "Raleway", Arial, sans-serif;
+  list-style-type: none;
+}
+
+#gridContainer>* {
+	border: 1px solid #c2c0c0;
+  filter: grayscale(50%);
+}
+
+#gridContainer>nav#menu {
+  display: none;  
+  border: 1px solid black;
+}
+
+div#menuMobile>nav#collapsableMenu {
+  display: none;
+  background-color: #fff;
+  border: 1px solid #000;
+  
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  
+}
+
+div#menuMobile>nav#collapsableMenu:target {
+  display: block;
+  position: fixed;
+}
+
+#gridContainer>#begin>.foto {
+  max-height: 300px;
+}
+
+#gridContainer>#glorie>.foto {
+  max-height: 300px;
+}
+
+#gridContainer>#zeventig>.foto {
+  max-height: 300px;
+}
+
+#gridContainer>#negentig>.foto {
+  max-height: 300px;
+}
+
+#gridContainer>#galactico>.foto {
+  max-height: 300px;
+}
+
+#gridContainer>#nieuw>.foto {
+  max-height: 300px;
+}
+
+footer {
+	grid-area: footer;
+  background-color: #f1f1f1!important;;
+  color: #000!important;
+  text-align: center;
+  line-height: 2;
+  height: auto;
+  padding: 26px 0 24px;
+}
+
+#logo {
+  height: 100px;
+  margin-left: auto;
+}
+
+  section {
+    padding: 20px;
+  }
+
+@media only screen and (min-width: 600px) {
+	#gridContainer {
+		display: block;
+	  margin: 20px;
+    text-align: center;
+  }
+  
+  #logo {
+    margin-left: 500px;
+  }
+  
+  div#menuMobile {
+   display: none;
+  }
+  #gridContainer>nav#menu {
+		grid-area: menu;
+    display: block;
+	}
+  
+  #gridContainer>footer {
+		grid-area: footer;
+    line-height: 3;
+    padding: 10px 0px;
+	}
+}
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
