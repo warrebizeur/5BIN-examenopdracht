@@ -4,14 +4,15 @@
   list-style-type: none;
 }
 
-#gridContainer>* {
-	border: 1px solid #c2c0c0;
-  filter: grayscale(50%);
-}
 
 #gridContainer>nav#menu {
   display: none;  
   border: 1px solid black;
+}
+
+#menuMobile {
+  position: sticky;
+  top: 0;
 }
 
 div#menuMobile>nav#collapsableMenu {
@@ -29,6 +30,8 @@ div#menuMobile>nav#collapsableMenu {
 div#menuMobile>nav#collapsableMenu:target {
   display: block;
   position: fixed;
+  line-height: 1.5;
+  font-size: 28px;
 }
 
 #gridContainer>#begin>.foto {
@@ -56,13 +59,12 @@ div#menuMobile>nav#collapsableMenu:target {
 }
 
 footer {
-	grid-area: footer;
-  background-color: #f1f1f1!important;;
+  grid-area: footer;
+  background-color: #f1f1f1!important;
   color: #000!important;
   text-align: center;
-  line-height: 2;
-  height: auto;
   padding: 26px 0 24px;
+  font-size: 20px;
 }
 
 #logo {
@@ -91,12 +93,12 @@ footer {
   #gridContainer>nav#menu {
 		grid-area: menu;
     display: block;
+    font-size: 18px;
 	}
   
   #gridContainer>footer {
 		grid-area: footer;
-    line-height: 3;
-    padding: 10px 0px;
+    font-size: 28px;
 	}
 }
   

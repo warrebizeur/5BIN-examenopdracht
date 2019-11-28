@@ -1,15 +1,27 @@
 * {
   text-decoration: none;
   font-family: "Raleway", Arial, sans-serif;
+  list-style-type: none;
 }
 
 #gridContainer>* {
-	border: 1px solid #c2c0c0;
-  display: grid;
+  border: 1px solid #c2c0c0;
 }
 
+#gridContainer {
+		display: grid;
+		grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
+		grid-template-rows: auto auto auto auto ;
+
+		grid-template-areas: "header  header  header  header  header  header  header  header  header  header"
+												 "menu    menu    menu    menu    menu    menu    menu    menu    menu    menu"
+												 "ploegen spelen  win     gelijk  verlies DV      DT      DS      punten  laatste"
+												 "footer  footer  footer  footer  footer  footer  footer  footer  footer  footer";
+  }
+
 #gridContainer>nav#menu {
-  display: none;  
+  display: none;    
+  border: 1px solid black;
 }
 
 #gridContainer>footer {
@@ -26,13 +38,23 @@ div#menuMobile>nav#collapsableMenu {
   top: 0;
   right: 0;
   left: 0;
-  bottom: 0;
-  
+  bottom: 0;  
+}
+
+#menuMobile {
+  position: sticky;
+  top: 0;
 }
 
 div#menuMobile>nav#collapsableMenu:target {
   display: block;
   position: fixed;
+  line-height: 1.5;
+  font-size: 28px;
+}
+
+#gridContainer>.ploeg>img {
+  height: 30px;
 }
 
 footer {
@@ -41,6 +63,7 @@ footer {
   color: #000!important;
   text-align: center;
   padding: 26px 0 24px;
+  font-size: 20px;
 	}
 
 #logo {
@@ -48,12 +71,21 @@ footer {
   margin-left: auto;
 }
 
+  h1 {
+    font-size: 18px;
+    margin: 1px;
+  }
+  
+  p {
+    margin: 1px;
+  }
+
 
 @media only screen and (min-width: 600px) {
 	#gridContainer {
 		display: grid;
-		grid-template-columns: auto ;
-		grid-template-rows: auto ;
+		grid-template-columns: auto auto auto auto auto auto auto auto auto auto ;
+		grid-template-rows: auto auto auto auto;
 
 		grid-template-areas: "header  header  header  header  header  header  header  header  header  header"
 												 "menu    menu    menu    menu    menu    menu    menu    menu    menu    menu"
@@ -72,7 +104,13 @@ footer {
 		grid-area: menu;
     display: block;
     text-align: center;  
+    border: 1px solid #000;
+    font-size: 18px;
 	}
+  
+  #gridContainer>.ploeg {
+    display: flex;
+  }
   
   #gridContainer>footer {
 		grid-area: footer;
@@ -114,9 +152,11 @@ footer {
     grid-area: punten;
   }
   
-  h1 {
-    font-size: 18px;
+  footer{
+    font-size: 28px;
   }
+  
+
   
   
 

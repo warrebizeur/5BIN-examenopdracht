@@ -20,8 +20,13 @@
 }
 
 #gridContainer>nav#menu {
-  display: none; 
+  display: none;  
   border: 1px solid black;
+}
+
+#menuMobile {
+  position: sticky;
+  top: 0;
 }
 
 div#menuMobile>nav#collapsableMenu {
@@ -41,36 +46,18 @@ div#menuMobile>nav#collapsableMenu:target {
   position: fixed;
 }
 
-#gridContainer>section#team1 {
-  border: 1px solid #c2c0c0;
-}
-
-#gridContainer>section#team2 {
-  border: 1px solid #c2c0c0;
-}
-
-#gridContainer>section#team3 {
-  border: 1px solid #c2c0c0;
-}
-
-#gridContainer>section#team4 {
-  border: 1px solid #c2c0c0;
-}
-
 .spelerinfo {
   background-color: #bfbcb4;
 }
 
 #gridContainer>footer {
 	grid-area: footer;
-  height: 110px;
   background-color: #f1f1f1!important;;
-  color: #000;
+  color: #000!important;
   text-align: center;
-  line-height: 2;
-  height: 100px;
   padding: 26px 0 24px;
-	}
+  font-size: 20px;
+}
 
 
 #logo {
@@ -107,8 +94,10 @@ img {
   #gridContainer>nav#menu {
 		grid-area: menu;
     display: block;
-    
 	}
+  #gridContainer>nav#menu>ul>li>a {
+    font-size: 18px;
+  }
   
   #gridContainer>section#team1 {
 		grid-area: team1;
@@ -117,8 +106,6 @@ img {
     width: 100%;
     margin-bottom: 0px;
     margin-left: 0px;
-    box-sizing: border-box;
-    border: 1px solid #c2c0c0;
 	}
   
   #gridContainer>section#team2 {
@@ -127,8 +114,6 @@ img {
     width: 100%;
     margin-bottom: 0px;
     margin-left: 0px;
-    box-sizing: border-box;
-    border: 1px solid #c2c0c0;
 	}
   
   #gridContainer>section#team3 {
@@ -137,8 +122,6 @@ img {
     width: 100%;
     margin-bottom: 0px;
     margin-left: 0px;
-    box-sizing: border-box;
-    border: 1px solid #c2c0c0;
 	}
   
   #gridContainer>section#team4 {
@@ -147,15 +130,12 @@ img {
     width: 100%;
     margin-bottom: 0px;
     margin-left: 0px;
-    box-sizing: border-box;
-    border: 1px solid #c2c0c0;
 	}
   
 
   
   #gridContainer>footer {
 		grid-area: footer;
-    padding: 45px;
 	}
   
   img {
